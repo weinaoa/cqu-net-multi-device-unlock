@@ -222,11 +222,25 @@ ua2f其实也可以在个界面进行安装。（还是要看依赖，如果你�
 参考文章：
 https://www.zouht.com/4107.html
 
+---
+
+#### clash相关
+如果你使用clash等代理软件，发现校园网登录网页进不去，你可以尝试添加几条规则：
+```
+DOMAIN,login.cqu.edu.cn,DIRECT
+DOMAIN-SUFFIX,cqu.edu.cn,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+```
+![clash_rules](pictures/clash_rules.png)
+
+
 ## 四、 更新记录🗓
 
 | 日期 | 更新内容 |
 |------|-----------|
 | 2025-10-23 | 初版发布 |
+| 2026-01-13 | clash规则相关 |
 
 ---
 
